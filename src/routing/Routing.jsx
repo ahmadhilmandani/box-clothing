@@ -1,12 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "../pages/home/Home";
 import Layout from "../layout/Layout";
-
-export function Shop() {
-  return (
-    <h1>Shop</h1>
-  )
-}
+import Shop from "../pages/shop/Shop";
 
 function Routing() {
   return (
