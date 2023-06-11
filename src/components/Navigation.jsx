@@ -17,12 +17,19 @@ function Navigation() {
         >
           Home
         </Link>
-        <Link className={`  hover:font-semibold ${active === 'shop' && 'font-semibold bg-amber-300 px-2 py-1 transition-all ease-in-out'}`} to={'shop'}
+        <Link className={`hover:font-semibold ${active === 'shop' && 'font-semibold bg-amber-300 px-2 py-1 transition-all ease-in-out'}`} to={'shop'}
           onClick={() => {
             setActive('shop')
           }}
         >
           Shop
+        </Link>
+        <Link className={`hover:font-semibold ${active === 'sign in' && 'font-semibold bg-amber-300 px-2 py-1 transition-all ease-in-out'}`} to={'sign-in'}
+          onClick={() => {
+            setActive('sign in')
+          }}
+        >
+          Sign In
         </Link>
       </div>
     </nav>
